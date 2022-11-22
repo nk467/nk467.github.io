@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" type="text/css" href="styles/site.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet"> 
+
     <title>kate kim</title>
   </head>
 
@@ -21,7 +25,7 @@
             <a href="work.html">Work</a>
           </li>
           <li>
-            <a href="books.html">Books</a>
+            <a href="resume.html">Resume</a>
           </li>
         </ul>
       </nav>
@@ -29,19 +33,17 @@
 
     <div class="resume">
 
-      <div class="education">
-        <p>Education</p>
-        <p><strong>Cornell University</strong></p>
-        <p>Information Science</p>
-        <p>Expected May 2024</p>
-      </div>
-
       <div class="experience">
-        <p>Experience</p>
+        <p>View my resume as a <a href="">PDF</a></p>
+        <p id="head">Experience</p>
 
         <div class="experience_1">
-          <h3><a href="https://www.kodewithklossy.com/csnyc">Apple Creative Studios - NYC</a></h3>
-          <p class="subheading_2">July - August 2022</p>
+          <div class="experience_heading">
+            <p><a href="https://www.kodewithklossy.com/csnyc">Apple Creative Studios - NYC</a></p>
+            <p class="role">App Designer</p>
+          </div>
+          
+          <p class="role_date">July - August 2022</p>
           <ul>
             <li>
                 Developed a Social Impact app prototype that seeks to improve access to helathcare for immigrants in a four-week program hosted by Apple Creative Studios in New York City
@@ -51,23 +53,15 @@
             </li>
           </ul>
 
-          <figure>
-            <!-- Source: https://www.kodewithklossy.com/csnyc -->
-            <img src="images/creative_studios.png" alt="Calling all app creators ages 18-24 Today at Apple Creative Studios NYC"/>
-            Source: <cite><a href="https://www.kodewithklossy.com/csnyc">Kode With Klossy</a></cite>
-          </figure>
-
-          <figure class="prototype">
-            <!-- Source: (original work) Kate Kim -->
-            <img src="images/alt_prototype.png" alt="app prototype"/>
-            <figcaption>K-doc Prototype</figcaption>
-          </figure>
         </div>
 
         <div class="experience_1">
-          <h3><a href="https://cusd.cornell.edu/">Cornell University Sustainable Design</a></h3>
-          <p class="subheading">Sustainable Mobility Subteam</p>
-          <p>September 2021 - present</p>
+          <div class="experience_heading">
+            <p><a href="https://cusd.cornell.edu/">Cornell University Sustainable Design</a></p>
+            <p class="role">Sustainable Mobility - City Subteam Member</p>
+          </div>
+          
+          <p class="role_date">September 2021 - present</p>
           <ul>
             <li>
                 Currently working on implementing the redesign of signage in the Seneca Street garage
@@ -76,41 +70,29 @@
                 Conducted fieldwork, user interviews, and case studies to revitalize and promote walkability in the Ithaca Downtown Area
             </li>
           </ul>
-
-          <figure>
-            <!-- Source: (original work) CUSD Internal Material -->
-            <img src="images/cusd.png" alt="Garage + State St. Revamp">
-          </figure>
         </div>
 
         <div class="experience_1">
-          <h3><a href="https://cornellsun.com/">The Cornell Daily Sun</a></h3>
-          <p class="subheading">Design Layout Team</p>
-          <p>August 2022 - present</p>
+          <div class="experience_heading">
+            <p><a href="https://cornellsun.com/">The Cornell Daily Sun</a></p>
+             <p class="role">Design Layout Team</p>
+          </div>
+          
+          <p class="role_date">August 2022 - present</p>
           <ul>
             <li>
                 Design the front page layout of issues printed by the Cornell Daily Sun
             </li>
           </ul>
-
-          <div class="pages">
-            <figure class="page">
-              <!-- Source: https://issuu.com/cornellsun/docs/9-22-22_entire_issue_hi_res -->
-              <img src="images/front-page-2.png" alt="Front Page of an issue of the Cornell Daily Sun">
-              <p class="caption_small">Source:<cite><a href="https://issuu.com/cornellsun/docs/9-22-22_entire_issue_hi_res">The Cornell Daily Sun [Issuu]</a></cite></p>
-            </figure>
-
-            <figure class="page">
-              <!-- Source: https://issuu.com/cornellsun/docs/9-15-22_entire_issue_hi_res -->
-              <img src="images/front_page.png" alt="Front Page of an issue of the Cornell Daily Sun">
-              <p class="caption_small">Source:<cite><a href="https://issuu.com/cornellsun/docs/9-15-22_entire_issue_hi_res">The Cornell Daily Sun [Issuu]</a></cite></p>
-            </figure>
-          </div>
         </div>
 
         <div class="experience_1">
-          <h3>Freelance Technical Consultant</h3>
-          <p class="subheading_2">June - July 2022</p>
+          <div class="experience_heading">
+            <p><a href="https://www.govcompete.com/">GovCompete</a></p>
+            <p class="role">Freelance Technical Consultant</p>
+          </div>
+          
+          <p class="role_date">June - July 2022</p>
           <ul>
             <li>
                 Developed automated solutions in Google Apps Script to optimize business operations and created documentation for deployment
@@ -124,8 +106,12 @@
           </ul>
         </div>
 
-        <h3>Google Computer Science Summer Institute</h3>
-        <p class="subheading_2">July 2020</p>
+        <div class="experience_heading">
+          <p><a href="https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute">Google Computer Science Summer Institute (CSSI)</a></p>
+          <p class="role">Program Particpant</p>
+        </div>
+        
+        <p class="role_date">July 2020</p>
         <ul>
           <li>
               Configured 15 individual coding projects in JavaScript during the intensive 4-week program
